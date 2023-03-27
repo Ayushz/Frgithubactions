@@ -8,7 +8,8 @@ on:
 jobs:
   build:
     if: >
-      github.event.pull_request.merged == true
+      github.event.pull_request.merged == true &&
+      github.event.pull_request.base.ref == 'staging'
     runs-on: [self-hosted, builder]
     steps:
       - uses: actions/checkout@v3
