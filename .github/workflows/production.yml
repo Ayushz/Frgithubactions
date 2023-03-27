@@ -9,7 +9,7 @@ jobs:
   build:
     if: >
       github.event.pull_request.merged == true
-    runs-on: [self-hosted, builder]
+    runs-on: self-hosted, builder
     steps:
       - uses: actions/checkout@v3
       - run: docker build -t a12zc/helloworld:latest .
