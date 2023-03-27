@@ -1,6 +1,7 @@
 version: "3"
 services:
-  image: a12zc/helloworld:latest
-  container_name: Docker_build_try
-  ports:
-    -"3000:8080"
+  test:
+    image: a12zc/helloworld:latest
+    container_name: Docker_build_try
+    ports:
+      - "3000:8080"
