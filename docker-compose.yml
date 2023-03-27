@@ -1,3 +1,4 @@
+version: "3"
 services:
   image: a12zc/helloworld:latest
   container_name: Docker_build_try
