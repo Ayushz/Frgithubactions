@@ -2,7 +2,7 @@ name: production try
 
 on: 
   pull_request:
-    branches: [main]
+    branches: [stagings]
     types: [closed]
     
     #pull requests:
